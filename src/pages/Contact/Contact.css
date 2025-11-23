@@ -1,0 +1,84 @@
+/* src/pages/Contact.css */
+
+.contact-main {
+  padding: 40px var(--spacing-unit) 80px;
+}
+
+.contact-main h1 {
+  font-size: 2.5rem;
+  color: var(--color-primary);
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 10px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+
+/* --- Contact Form Section --- */
+.contact-form-section {
+  padding: 30px;
+}
+
+.contact-form-section h2 {
+  font-size: 1.5rem;
+  color: var(--color-text-dark);
+  margin-bottom: 25px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+/* --- Contact Info Section --- */
+.contact-info-section {
+  padding: 30px;
+  height: fit-content;
+  background-color: var(--color-secondary);
+  border: 1px solid var(--color-primary);
+}
+
+.contact-info-section h2 {
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  margin-bottom: 30px;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.info-item span {
+  font-size: 1.5rem;
+  color: var(--color-primary);
+  line-height: 1.4;
+}
+
+.info-item p {
+  font-size: 1rem;
+  color: var(--color-text-dark);
+}
+
+.business-hours p {
+  font-weight: 600;
+}

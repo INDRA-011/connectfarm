@@ -1,0 +1,81 @@
+/* src/components/DashboardSidebar/Sidebar.css */
+
+.sidebar-card {
+  width: 250px;
+  padding: 20px 0; /* Padding handled inside sections */
+  background-color: var(--color-background-card);
+  box-shadow: var(--shadow-soft);
+  border-radius: var(--border-radius);
+  height: fit-content; /* Adjust height to content */
+}
+
+.sidebar-header {
+  padding: 0 20px 20px 20px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--color-text-dark);
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: 15px;
+}
+
+.role-tag {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+}
+
+.sidebar-nav li a {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  color: var(--color-text-dark);
+  font-weight: 500;
+  transition: background-color 0.2s, color 0.2s;
+  border-left: 4px solid transparent;
+}
+
+.sidebar-nav li a:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+}
+
+.sidebar-nav li a.active {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+  border-left-color: var(--color-primary);
+}
+
+.nav-icon {
+  font-size: 1.2rem;
+  margin-right: 12px;
+}
+
+.sidebar-footer {
+  padding: 15px 20px 0;
+  margin-top: 15px;
+  border-top: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-link {
+  color: var(--color-text-light);
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+.footer-link:hover {
+  color: var(--color-primary);
+}
+
+.logout-btn {
+  color: #e53935; /* Soft red for log out */
+}
+
+.logout-btn:hover {
+  color: #c62828;
+}

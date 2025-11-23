@@ -1,0 +1,79 @@
+/* src/components/ProductListTable/ProductListTable.css */
+
+.product-table-wrapper {
+  padding: 20px;
+  overflow-x: auto;
+}
+
+.minimal-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.minimal-table th,
+.minimal-table td {
+  padding: 15px 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.minimal-table th {
+  background-color: var(--color-secondary);
+  color: var(--color-text-dark);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+}
+
+.minimal-table tbody tr:hover {
+  background-color: #f3f3f3;
+}
+
+/* --- Status Badges --- */
+.status-badge {
+  padding: 5px 10px;
+  border-radius: 50px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.status-active {
+  background-color: #e8f5e9; /* Light Green */
+  color: #4caf50; /* Green */
+}
+
+.status-low-stock {
+  background-color: #fffde7; /* Light Yellow */
+  color: #ffc107; /* Yellow */
+}
+
+.status-out-of-stock {
+  background-color: #ffebee; /* Light Red */
+  color: #f44336; /* Red */
+}
+
+/* --- Table Actions --- */
+.table-btn {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  margin-right: 8px;
+  transition: background-color 0.2s;
+}
+
+.edit-btn {
+  background-color: #e3f2fd; /* Light Blue */
+  color: #2196f3; /* Blue */
+}
+
+.delete-btn {
+  background-color: #fbeff2; /* Light Pink */
+  color: #e91e63; /* Pink/Red */
+}
+
+.table-btn:hover {
+  opacity: 0.8;
+}

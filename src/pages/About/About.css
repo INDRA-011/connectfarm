@@ -1,0 +1,68 @@
+/* src/pages/About.css */
+
+.about-main {
+  padding: 40px var(--spacing-unit) 80px;
+}
+
+.about-main h1 {
+  font-size: 2.5rem;
+  color: var(--color-primary);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.about-section {
+  padding: 40px;
+  margin-bottom: 40px;
+  line-height: 1.7;
+}
+
+.about-section h2 {
+  font-size: 1.8rem;
+  color: var(--color-text-dark);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-section p {
+  color: var(--color-text-light);
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto 30px;
+  text-align: center;
+}
+
+/* Value Cards Grid */
+.value-cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.value-card {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  background-color: var(--color-background-light);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-secondary);
+}
+
+.value-card h3 {
+  color: var(--color-primary);
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.value-card p {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+}
+
+.team-section {
+  background-color: var(--color-secondary);
+  border: none;
+  box-shadow: none;
+  border-radius: var(--border-radius);
+}

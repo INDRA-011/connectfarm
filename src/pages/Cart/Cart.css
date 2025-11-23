@@ -1,0 +1,64 @@
+/* src/pages/Cart.css */
+
+.cart-main {
+  padding: 40px var(--spacing-unit);
+}
+
+.cart-content-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+
+.cart-items-list h1 {
+  font-size: 2rem;
+  color: var(--color-primary);
+  margin-bottom: 25px;
+}
+
+/* --- Cart Summary --- */
+.cart-summary {
+  height: fit-content;
+  padding: 30px;
+}
+
+.cart-summary h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid var(--color-secondary);
+  padding-bottom: 10px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  font-size: 1rem;
+  color: var(--color-text-dark);
+}
+
+.total-row {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  border-top: 1px solid var(--color-border);
+  margin-top: 10px;
+  padding-top: 15px;
+}
+
+.checkout-btn {
+  margin-top: 25px;
+  padding: 15px;
+}
+
+.policy-text {
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+  text-align: center;
+  margin-top: 15px;
+}
+
+.empty-cart {
+  padding: 50px;
+  border: 2px dashed var(--color-secondary);
+}

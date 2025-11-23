@@ -1,0 +1,134 @@
+/* src/pages/BuyerDashboard.css */
+
+.buyer-header {
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.buyer-header h1 {
+  font-size: 2rem;
+  color: var(--color-primary);
+  margin-bottom: 5px;
+}
+
+.buyer-header p {
+  color: var(--color-text-light);
+}
+
+/* --- Search and Filter Area --- */
+.search-filter-area {
+  padding: 20px 30px;
+  margin-bottom: 40px;
+}
+
+.search-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  flex-grow: 1;
+  padding: 14px;
+  border: 1px solid var(--color-border);
+  border-radius: 50px; /* Pill shape */
+  font-size: 1rem;
+}
+
+.search-bar input:focus {
+  border-color: var(--color-primary);
+  outline: none;
+}
+
+.search-icon-btn {
+  background-color: var(--color-primary);
+  color: white;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  font-size: 1.2rem;
+}
+
+.search-icon-btn:hover {
+  background-color: #2e7d32;
+}
+
+.filter-controls {
+  display: flex;
+  gap: 15px;
+}
+
+.minimal-select {
+  padding: 10px 15px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  background-color: var(--color-background-light);
+  color: var(--color-text-dark);
+  font-size: 0.95rem;
+  cursor: pointer;
+  appearance: none; /* Remove default arrow */
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath fill='%23388E3C' d='M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px top 50%;
+  background-size: 18px;
+}
+
+/* --- Product Listing Grid --- */
+.product-listing-section {
+  margin-top: 40px;
+}
+
+.section-title {
+  font-size: 1.3rem;
+  color: var(--color-text-dark);
+  margin-bottom: 20px;
+}
+
+.product-listing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 25px;
+}
+
+.source-card {
+  padding: 20px;
+}
+
+.source-card h3 {
+  color: var(--color-primary);
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.source-card .price-tag {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #e65100; /* Orange accent for wholesale price */
+  margin: 10px 0;
+  display: block;
+}
+
+.source-card .small-text {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  margin-bottom: 15px;
+}
+
+.add-product-prompt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border: 2px dashed var(--color-secondary);
+  min-height: 250px;
+}
+
+.add-product-prompt h3 {
+  color: var(--color-text-dark);
+}
+
+.add-product-prompt p {
+  margin-bottom: 15px;
+}

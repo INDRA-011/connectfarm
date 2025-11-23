@@ -1,0 +1,24 @@
+/* src/pages/AdminDashboard.css */
+
+/* Reuses styles from Dashboard.css */
+
+.chart-container {
+  padding: 30px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.chart-placeholder {
+  flex: 1;
+  min-height: 200px;
+  background-color: var(--color-secondary);
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+/* Specific styling for Admin tables (if needed, otherwise uses ProductListTable.css) */

@@ -1,0 +1,44 @@
+/* src/pages/OrderSuccess.css */
+
+.success-main {
+  min-height: calc(100vh - 200px); /* Account for navbar and footer height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px var(--spacing-unit);
+}
+
+.success-card {
+  max-width: 600px;
+  padding: 50px;
+}
+
+.success-icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  color: var(--color-primary);
+}
+
+.success-card h1 {
+  font-size: 2.2rem;
+  color: var(--color-primary);
+  margin-bottom: 10px;
+}
+
+.order-id-text {
+  font-size: 1.1rem;
+  color: var(--color-text-dark);
+  margin-bottom: 25px;
+}
+
+.success-card p {
+  color: var(--color-text-light);
+  margin-bottom: 30px;
+  line-height: 1.7;
+}
+
+.success-actions {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}

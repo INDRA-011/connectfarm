@@ -1,0 +1,23 @@
+/* src/components/DashboardLayout/DashboardLayout.css */
+
+.dashboard-app-container {
+  background-color: var(--color-background-light);
+  min-height: 100vh;
+}
+
+.dashboard-main-content {
+  display: flex;
+  padding-top: 30px; /* Space below Navbar */
+  gap: 30px;
+}
+
+.dashboard-content-area {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: var(--color-background-card);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-soft);
+  min-height: calc(
+    100vh - 100px
+  ); /* Adjust based on Navbar height and padding */
+}

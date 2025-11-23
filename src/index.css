@@ -1,68 +1,93 @@
+/* src/style.css */
+
+/* --- 1. Color Palette (Nature-Inspired) --- */
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  --color-primary: #388e3c; /* Deep Forest Green (CTA) */
+  --color-secondary: #d9ead3; /* Soft Light Green (Backgrounds/Accents) */
+  --color-accent: #ffc107; /* Golden Yellow (Alerts/Highlights) */
+  --color-text-dark: #212121; /* Primary Text */
+  --color-text-light: #5a5a5a; /* Secondary Text/Labels */
+  --color-background-light: #f8f9fa; /* Main Background */
+  --color-background-card: #ffffff; /* Card Background */
+  --color-border: #e0e0e0; /* Light Border */
+  --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.08); /* Soft shadow for depth */
+  --border-radius: 8px;
+  --spacing-unit: 16px;
+}
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+/* --- 2. CSS Reset --- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* --- 3. Base Styles & Typography --- */
+html,
+body {
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif; /* Friendly, modern font */
+  color: var(--color-text-dark);
+  background-color: var(--color-background-light);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  margin-bottom: var(--spacing-unit);
 }
 
 a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+  text-decoration: none;
+  color: var(--color-primary);
+  transition: color 0.2s;
 }
+
 a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+  color: var(--color-text-dark);
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
   cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  border: none;
+  transition: background-color 0.2s, box-shadow 0.2s;
+  font-weight: 500;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+/* --- 4. Utility Classes (Minimal & Reusable) --- */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-unit);
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 10px 24px;
+  border-radius: 50px; /* Pill shape */
+  box-shadow: 0 4px 8px rgba(56, 142, 60, 0.3);
+}
+
+.btn-primary:hover {
+  background-color: #2e7d32; /* Slightly darker green */
+  box-shadow: 0 6px 12px rgba(56, 142, 60, 0.4);
+}
+
+.card-shadow {
+  background-color: var(--color-background-card);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-soft);
+  padding: 24px;
+}
+
+.text-center {
+  text-align: center;
 }

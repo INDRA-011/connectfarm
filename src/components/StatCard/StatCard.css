@@ -1,0 +1,32 @@
+/* src/components/StatCard/StatCard.css */
+
+.stat-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+}
+
+.stat-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  /* Styles for background/color will be passed inline via props */
+}
+
+.stat-value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  line-height: 1;
+}
+
+.stat-title {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  font-weight: 500;
+}

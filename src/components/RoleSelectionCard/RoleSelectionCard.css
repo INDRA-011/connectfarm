@@ -1,0 +1,38 @@
+/* src/components/RoleSelectionCard/RoleSelectionCard.css */
+
+.role-select-card {
+  width: 200px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s, border-color 0.2s;
+  border: 2px solid transparent;
+}
+
+.role-select-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-primary);
+}
+
+.role-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.role-select-card h3 {
+  color: var(--color-primary);
+  margin-bottom: 10px;
+}
+
+.role-select-card p {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  min-height: 40px; /* Standardize card height */
+  margin-bottom: 15px;
+}
+
+.btn-select {
+  width: 100%;
+  padding: 8px;
+  font-size: 0.9rem;
+}

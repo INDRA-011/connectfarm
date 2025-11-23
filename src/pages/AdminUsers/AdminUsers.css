@@ -1,0 +1,36 @@
+/* src/pages/AdminUsers.css */
+/* Reuses minimal-table from ProductListTable.css */
+
+.user-table {
+  width: 100%;
+}
+
+.role-tag {
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.role-producer {
+  background-color: #e8f5e9; /* Light Green */
+  color: #388e3c;
+}
+.role-seller {
+  background-color: #fff3e0; /* Light Orange */
+  color: #ff9800;
+}
+.role-buyer {
+  background-color: #e3f2fd; /* Light Blue */
+  color: #2196f3;
+}
+
+.disable-btn {
+  background-color: #ffebee;
+  color: #e53935;
+}
+
+.enable-btn {
+  background-color: #e8f5e9;
+  color: #4caf50;
+}

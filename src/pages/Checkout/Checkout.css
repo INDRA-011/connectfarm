@@ -1,0 +1,134 @@
+/* src/pages/Checkout.css */
+
+.checkout-main {
+  padding: 40px var(--spacing-unit) 80px;
+}
+
+.checkout-main h1 {
+  font-size: 2.2rem;
+  color: var(--color-primary);
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 10px;
+}
+
+.checkout-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  grid-template-areas:
+    "address summary"
+    "payment summary";
+}
+
+.checkout-section {
+  padding: 30px;
+}
+
+.checkout-section h2 {
+  font-size: 1.5rem;
+  color: var(--color-text-dark);
+  margin-bottom: 25px;
+}
+
+/* Specific grid areas */
+.checkout-section:nth-child(1) {
+  grid-area: address;
+}
+.checkout-section:nth-child(2) {
+  grid-area: payment;
+}
+
+.address-form input,
+.card-details-form input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.form-group-split {
+  display: flex;
+  gap: 15px;
+}
+
+.form-group-split input {
+  margin-bottom: 0;
+}
+
+/* --- Payment Options --- */
+.payment-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.payment-option-card {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: border-color 0.2s;
+  background-color: var(--color-background-light);
+}
+
+.payment-option-card input[type="radio"] {
+  margin-right: 15px;
+  accent-color: var(--color-primary);
+  transform: scale(1.2);
+}
+
+.payment-option-card:has(input:checked) {
+  border-color: var(--color-primary);
+  background-color: var(--color-secondary);
+}
+
+.card-details-form input {
+  margin-bottom: 15px;
+}
+
+/* --- Checkout Summary --- */
+.checkout-summary {
+  grid-area: summary;
+  height: fit-content;
+  padding: 30px;
+}
+
+.checkout-summary h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  color: var(--color-text-dark);
+}
+
+.total-row {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  border-top: 1px solid var(--color-border);
+  margin-top: 15px;
+  padding-top: 15px;
+}
+
+.place-order-btn {
+  padding: 18px;
+  margin-top: 25px;
+  font-size: 1.1rem;
+}
+
+.secure-text {
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  margin-top: 10px;
+}
