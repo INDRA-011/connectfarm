@@ -1,11 +1,36 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "../Navbar/Navbar.jsx";
 import Footer from "../Footer/Footer.jsx";
 import CategoryCard from "../CategoryCard/CategoryCard.jsx";
 import HowItWorksStep from "../HowItWorksStep/HowItWorksStep.jsx";
+
 import "./LandingPage.css";
 
 const LandingPage = () => {
+  const [showScroll, setShowScroll] = useState(false);
+
+  // Detect scroll position
+  const handleScroll = () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const windowHeight = window.innerHeight;
+    const documentHeight = document.documentElement.scrollHeight;
+
+    // Show button if user is not at bottom
+    setShowScroll(scrollTop + windowHeight < documentHeight - 100);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToBottom = () => {
+    window.scrollTo({
+      top: document.documentElement.scrollHeight,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="landing-page">
       <Navbar />
@@ -18,7 +43,8 @@ const LandingPage = () => {
               <h1>Connecting Fields to Families.</h1>
               <p>
                 Fresh, local, and sustainable produce delivered from
-                **Producers** directly to **Buyers** and **Sellers**.
+                <strong>Producers</strong> directly to <strong>Buyers</strong>{" "}
+                and <strong>Sellers</strong>.
               </p>
               <div className="hero-ctas">
                 <a href="/signup" className="btn-primary btn-large">
@@ -30,10 +56,7 @@ const LandingPage = () => {
               </div>
             </div>
             <div className="hero-image">
-              {/* Placeholder for a visually stunning, fresh produce image */}
-              <div className="image-placeholder">
-                [attachment_0](attachment)
-              </div>
+              <div className="image-placeholder">[attachment_0]</div>
             </div>
           </div>
         </section>
@@ -80,6 +103,29 @@ const LandingPage = () => {
       </main>
 
       <Footer />
+
+      {/* Scroll to Bottom Button */}
+      {showScroll && (
+        <button
+          onClick={scrollToBottom}
+          style={{
+            position: "fixed",
+            bottom: "30px",
+            right: "30px",
+            padding: "10px 15px",
+            borderRadius: "50%",
+            backgroundColor: "#fd3e3eff",
+            color: "#fff",
+            border: "none",
+            cursor: "pointer",
+            fontSize: "20px",
+            boxShadow: "0 2px 6px rgba(0,0,0,0.3)",
+            zIndex: 1000,
+          }}
+        >
+          ↓
+        </button>
+      )}
     </div>
   );
 };
