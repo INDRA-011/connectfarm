@@ -9,9 +9,9 @@ const Footer = () => {
           <div className="footer-logo">🌿 FarmConnect</div>
           <p>Connecting fields to families, sustainably.</p>
           <div className="social-links">
-            <a href="#facebook">📘</a>
-            <a href="#instagram">📸</a>
-            <a href="#twitter">🐦</a>
+            <a href="https://www.facebook.com/">🚹</a>
+            <a href="https://www.instagram.com/?hl=en">📷</a>
+            <a href="http://x.com">🐦</a>
           </div>
         </div>
 

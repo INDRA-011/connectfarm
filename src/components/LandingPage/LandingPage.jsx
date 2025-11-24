@@ -3,6 +3,7 @@ import Navbar from "../Navbar/Navbar.jsx";
 import Footer from "../Footer/Footer.jsx";
 import CategoryCard from "../CategoryCard/CategoryCard.jsx";
 import HowItWorksStep from "../HowItWorksStep/HowItWorksStep.jsx";
+import "./LandingPage.css";
 
 const LandingPage = () => {
   return (
