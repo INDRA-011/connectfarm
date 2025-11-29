@@ -13,12 +13,12 @@ const LandingPage = () => {
       <main>
         {/* Hero Section */}
         <section className="hero-section">
-          <div className="container hero-content">
+          <div className="hero-content">
             <div className="hero-text">
               <h1>Connecting Fields to Families.</h1>
               <p>
                 Fresh, local, and sustainable produce delivered from
-                **Producers** directly to **Buyers** and **Sellers**.
+                Producers directly to Buyers and Sellers.
               </p>
               <div className="hero-ctas">
                 <a href="/signup" className="btn-primary btn-large">
@@ -32,7 +32,7 @@ const LandingPage = () => {
             <div className="hero-image">
               {/* Placeholder for a visually stunning, fresh produce image */}
               <div className="image-placeholder">
-                [attachment_0](attachment)
+                
               </div>
             </div>
           </div>
