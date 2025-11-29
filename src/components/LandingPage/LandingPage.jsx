@@ -57,7 +57,7 @@ const LandingPage = () => {
             <div className="hero-image">
               {/* Placeholder for a visually stunning, fresh produce image */}
               <div className="image-placeholder">
-                [attachment_0](attachment)
+                
               </div>
             </div>
           </div>
