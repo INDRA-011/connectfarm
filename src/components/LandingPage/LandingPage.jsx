@@ -43,7 +43,7 @@ const LandingPage = () => {
               <h1>Connecting Fields to Families.</h1>
               <p>
                 Fresh, local, and sustainable produce delivered from
-                **Producers** directly to **Buyers** and **Sellers**.
+                Producers directly to Buyers and Sellers.
               </p>
               <div className="hero-ctas">
                 <a href="/signup" className="btn-primary btn-large">
