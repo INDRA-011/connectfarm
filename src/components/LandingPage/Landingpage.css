@@ -49,7 +49,8 @@
 .btn-primary {
   background-color: var(--color-primary);
   color: white;
-  padding: 10px 28px;
+  padding: 10px 28
+  px;
   border-radius: 50px; 
   box-shadow: 0 4px 8px rgba(56, 142, 60, 0.3);
 }

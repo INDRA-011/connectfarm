@@ -15,8 +15,8 @@ const Navbar = () => {
         <nav className="navbar-links">
           <a href="/">Home</a>
           <a href="/products">Products</a>
-          <a href="/producers">Producers</a>
-          <a href="/sellers">Sellers</a>
+          <a href="/producer/dashboard">Producers</a>
+          <a href="/seller/dashboard">Sellers</a>
         </nav>
         <div className="navbar-actions">
           <a href="/cart" className="action-icon">

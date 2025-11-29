@@ -1,47 +1,65 @@
 /* src/components/Navbar/Navbar.css */
 
+/*
+* 🎨 Navbar Container Colors:
+* - Background: Forced to pure white (#ffffff) to match the new theme.
+* - Border: Updated border color to a light grey.
+*/
 .navbar {
   width: 100%;
-  background-color: var(--color-background-card);
-  border-bottom: 1px solid var(--color-border);
-  padding: 12px 0;
+  background-color: #ffffff; /* Pure white background */
+  border-bottom: 1px solid #e0e0e0; /* Subtle light grey border */
+  padding: 15px 0; /* Slightly increased vertical padding */
   position: sticky;
   top: 0;
   z-index: 100;
+  /* Removed margin, border-radius, and box-shadow to prevent floating effect */
 }
 
 .navbar-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* Optional: Add a max-width and center it if your content needs constraint */
+  /* max-width: 1200px; */
+  /* margin: 0 auto; */
 }
 
+/*
+* 🌳 Logo Changes:
+* - Color: Clear green accent.
+*/
 .navbar-logo {
-  font-size: 1.5rem;
+  font-size: 1.6rem; /* Slightly larger */
   font-weight: 700;
-  color: var(--color-primary);
+  color: #4caf50; /* Primary green color */
   display: flex;
   align-items: center;
 }
 
 .navbar-logo span {
-  font-size: 1.8rem;
-  margin-right: 8px;
+  font-size: 2rem; /* Larger icon/span */
+  margin-right: 10px;
 }
 
+/*
+* 🔗 Link Changes:
+* - Color: Darker text for better contrast on white background.
+*/
 .navbar-links a {
-  margin: 0 15px;
-  color: var(--color-text-light);
+  margin: 0 20px;
+  color: #555555; /* Dark grey for navigation text */
   font-weight: 500;
   padding: 5px 0;
   position: relative;
+  transition: color 0.3s;
 }
 
 .navbar-links a:hover {
-  color: var(--color-primary);
+  color: #4caf50; /* Green on hover */
 }
 
-/* Underline effect on hover */
+/* Underline effect on hover (Using the new green color) */
 .navbar-links a:hover::after {
   content: "";
   position: absolute;
@@ -49,7 +67,7 @@
   left: 0;
   width: 100%;
   height: 2px;
-  background-color: var(--color-primary);
+  background-color: #4caf50; /* Green underline */
 }
 
 .navbar-actions {
@@ -57,19 +75,40 @@
   align-items: center;
 }
 
+/*
+* 🛒 Icon Changes:
+* - Color: Set to a darker shade.
+*/
 .action-icon {
-  font-size: 1.4rem;
-  color: var(--color-text-light);
-  margin-left: 20px;
+  font-size: 1.5rem;
+  color: #555555; /* Dark grey for icons */
+  margin-left: 25px;
   padding: 4px;
 }
 
 .action-icon:hover {
-  color: var(--color-primary);
+  color: #4caf50; /* Green on hover */
 }
 
+/*
+* ✅ Button Changes:
+* - Background: Primary green color.
+* - Text: White text.
+* - Rounded Corners: Highly rounded edges.
+*/
 .btn-small {
-  padding: 8px 18px;
-  font-size: 0.9rem;
+  background-color: #4caf50; /* Solid green button */
+  color: #ffffff; /* White text on button */
+  padding: 10px 22px; /* Increased padding for a larger button */
+  font-size: 0.95rem;
   margin-left: 20px;
+  border-radius: 15px; /* Highly rounded corners */
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-small:hover {
+  background-color: #388e3c; /* Darker green on hover */
 }
