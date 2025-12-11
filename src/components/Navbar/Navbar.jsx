@@ -14,9 +14,9 @@ const Navbar = () => {
         </div>
         <nav className="navbar-links">
           <a href="/">Home</a>
-          <a href="/products">Products</a>
-          <a href="/producer/dashboard">Producers</a>
-          <a href="/seller/dashboard">Sellers</a>
+          <a href="/about">About</a>
+          <a href="/contact">Contact</a>
+          <a href="/">Privacy & Policy</a>
         </nav>
         <div className="navbar-actions">
           <a href="/cart" className="action-icon">

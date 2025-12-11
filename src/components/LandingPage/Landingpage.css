@@ -3,9 +3,10 @@
 /* --- Hero Section Styling --- */
 .hero-section {
   padding: 60px 0 80px;
-  background-color: var(--color-secondary); /* Soft light green background */
+  background-image: url();
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 40px;
+  background-blend-mode: color;
 }
 
 .hero-content {
@@ -63,10 +64,11 @@
 .image-placeholder {
   width: 400px;
   height: 300px;
-  background-color: var(
-    --color-primary
-  ); /* Use primary color as a placeholder background */
-  border-radius: var(--border-radius);
+  background-image: url(../../assets/download.jpeg);
+  width: 50%;
+  height: 70%;
+  background-size: cover;
+
   display: flex;
   align-items: center;
   justify-content: center;

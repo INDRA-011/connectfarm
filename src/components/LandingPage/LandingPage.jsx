@@ -55,9 +55,7 @@ const LandingPage = () => {
                 </a>
               </div>
             </div>
-            <div className="hero-image">
-              <div className="image-placeholder">[attachment_0]</div>
-            </div>
+            <div className="hero-image"></div>
           </div>
         </section>
 
