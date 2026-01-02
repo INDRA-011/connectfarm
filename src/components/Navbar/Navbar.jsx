@@ -25,7 +25,7 @@ const Navbar = () => {
           <a href="/profile" className="action-icon">
             👤
           </a>
-          <a href="/login" className="btn-primary btn-small">
+          <a href="/Signup" className="btn-primary btn-small">
             Sign In
           </a>
         </div>

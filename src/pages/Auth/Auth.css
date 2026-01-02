@@ -104,3 +104,22 @@
 .back-link:hover {
   color: var(--color-primary);
 }
+
+.back {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  text-decoration: none;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  border-radius: 10px;
+}
+.back-btn {
+  margin-right: 8px;
+  color: green;
+}
+.back:hover {
+}

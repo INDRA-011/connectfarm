@@ -36,7 +36,7 @@ const App = () => {
     const path = window.location.pathname;
 
     if (path === "/login") return <Login />;
-    if (path === "/signup") return <Signup />;
+    if (path === "/Signup") return <Signup />;
     if (path === "/about") return <About />;
     if (path === "/contact") return <Contact />;
     if (path === "/cart") return <Cart />;

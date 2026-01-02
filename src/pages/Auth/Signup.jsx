@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Auth.css"; // Shared Auth Styles
 import RoleSelectionCard from "../../components/RoleSelectionCard/RoleSelectionCard.jsx";
+import { FaArrowCircleLeft } from "react-icons/fa";
 
 const Signup = () => {
   const [step, setStep] = useState(1);
@@ -13,6 +14,9 @@ const Signup = () => {
 
   const renderRoleSelection = () => (
     <div className="role-selection-container">
+      <a href="/" className="back">
+        <FaArrowCircleLeft class="back-btn  " size={44} />
+      </a>
       <h2 className="text-center">Join FarmConnect</h2>
       <p className="text-center">Select your primary role to get started.</p>
       <div className="role-cards-grid">
