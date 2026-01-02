@@ -96,9 +96,11 @@
 }
 
 .back-link {
-  color: var(--color-text-light);
-  margin-top: 10px;
-  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+  color: green;
 }
 
 .back-link:hover {

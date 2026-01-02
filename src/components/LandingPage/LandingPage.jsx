@@ -3,8 +3,15 @@ import Navbar from "../Navbar/Navbar.jsx";
 import Footer from "../Footer/Footer.jsx";
 import CategoryCard from "../CategoryCard/CategoryCard.jsx";
 import HowItWorksStep from "../HowItWorksStep/HowItWorksStep.jsx";
+import { PiPottedPlantBold } from "react-icons/pi";
+import { LiaHandshakeSolid } from "react-icons/lia";
+import { ImTruck } from "react-icons/im";
+import { GiShinyApple } from "react-icons/gi";
+import { FaEgg } from "react-icons/fa6";
+import { GiWheat } from "react-icons/gi";
+import { GiHoneyJar } from "react-icons/gi";
 
-import "./LandingPage.css";
+import "./Landingpage.css";
 
 const LandingPage = () => {
   const [showScroll, setShowScroll] = useState(false);
@@ -68,17 +75,17 @@ const LandingPage = () => {
             </p>
             <div className="steps-container">
               <HowItWorksStep
-                icon="🌱"
+                icon={<PiPottedPlantBold />}
                 title="1. Producers List"
                 description="Farmers list their fresh harvest, setting wholesale or retail prices."
               />
               <HowItWorksStep
-                icon="🤝"
+                icon={<LiaHandshakeSolid />}
                 title="2. Connect & Order"
                 description="Sellers and Buyers discover products and place orders directly."
               />
               <HowItWorksStep
-                icon="🚚"
+                icon={<ImTruck />}
                 title="3. Freshly Delivered"
                 description="Goods are picked up and delivered, ensuring quality and freshness."
               />
@@ -91,10 +98,26 @@ const LandingPage = () => {
           <div className="container">
             <h2 className="text-center">Explore Fresh Categories</h2>
             <div className="category-grid">
-              <CategoryCard title="Fruits & Vegetables" icon="🍎" />
-              <CategoryCard title="Dairy & Eggs" icon="🥚" />
-              <CategoryCard title="Grains & Pulses" icon="🌾" />
-              <CategoryCard title="Specialty Goods" icon="🍯" />
+              <CategoryCard
+                className="apple"
+                title="Fruits & Vegetables"
+                icon={<GiShinyApple />}
+              />
+              <CategoryCard
+                className="egg"
+                title="Dairy & Eggs"
+                icon={<FaEgg />}
+              />
+              <CategoryCard
+                class="wheat"
+                title="Grains & Pulses"
+                icon={<GiWheat />}
+              />
+              <CategoryCard
+                class="jar"
+                title="Specialty Goods"
+                icon={<GiHoneyJar />}
+              />
             </div>
           </div>
         </section>

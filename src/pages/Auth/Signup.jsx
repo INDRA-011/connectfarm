@@ -94,9 +94,9 @@ const Signup = () => {
         </button>
       </form>
       <p className="auth-footer-link">
-        <span className="back-link" onClick={() => setStep(1)}>
-          &larr; Change Role
-        </span>
+        <a href="/" className="back-link">
+          <FaArrowCircleLeft class="back-btn  " size={44} />
+        </a>
       </p>
     </div>
   );
