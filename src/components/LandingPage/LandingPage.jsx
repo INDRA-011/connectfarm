@@ -135,7 +135,7 @@ const LandingPage = () => {
             right: "30px",
             padding: "10px 15px",
             borderRadius: "50%",
-            backgroundColor: "#fd3e3eff",
+            backgroundColor: "#30e111ff",
             color: "#fff",
             border: "none",
             cursor: "pointer",

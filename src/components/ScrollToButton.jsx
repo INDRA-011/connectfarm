@@ -36,7 +36,7 @@ const ScrollToBottom = () => {
         right: "30px",
         padding: "10px 15px",
         borderRadius: "50%",
-        backgroundColor: "#078900ff",
+        backgroundColor: "#11bd08ff",
         color: "#fff",
         border: "none",
         cursor: "pointer",
